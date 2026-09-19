@@ -132,7 +132,7 @@ static void Bai1()
 
     long ketQua = TongLonHon(nums, moc);
 
-    Console.WriteLine("Tổng các phần tử lớn hơn " + moc + " = " + ketQua);
+    Console.WriteLine("Tổng các phần tử lớn hơn " + moc + " : " + ketQua);
 }
 
 
@@ -162,8 +162,7 @@ static void Bai2()
 
     int[] nums = NhapMangInt();
 
-    (int[] tang, int[] giam) ketQua =
-        SapXepHaiChieu(nums);
+    (int[] tang, int[] giam) ketQua = SapXepHaiChieu(nums);
 
     Console.Write("Mảng tăng dần: ");
     InMang(ketQua.tang);
@@ -236,7 +235,7 @@ static int[] LoaiTrung(int[] nums)
 #endregion
 
 
-#region Bài 4: sửa lại out put 1 tí
+#region Bài 4
 
 static void Bai4()
 {
@@ -387,12 +386,11 @@ static void Bai7()
     if (ketQua == int.MinValue)
     {
         Console.WriteLine("Không tồn tại giá trị lớn thứ hai.");
-
         Console.WriteLine("Kết quả = int.MinValue");
     }
     else
     {
-        Console.WriteLine("Kết quả = " + ketQua);
+        Console.WriteLine("Kết quả : " + ketQua);
     }
 }
 
@@ -437,8 +435,7 @@ static int LonThuHai(int[] nums)
 
 static void Bai8()
 {
-    Console.WriteLine("========== BÀI 8 ==========");
-    Console.WriteLine("Thống kê xếp loại");
+    Console.WriteLine("Bài 8: Thống kê xếp loại");
 
     double[] diem = NhapMangDouble();
 
@@ -496,10 +493,9 @@ static void Bai9()
 
     int[] nums = NhapMangInt();
 
-    bool ketQua =
-        ContainsDuplicate(nums);
+    bool ketQua = ContainsDuplicate(nums);
 
-    Console.WriteLine("Kết quả = " + ketQua);
+    Console.WriteLine("Kết quả : " + ketQua);
 }
 
 
@@ -532,15 +528,9 @@ static void Bai10()
     Console.Write("Nhập k: ");
     int k = int.Parse(Console.ReadLine());
 
-    int ketQua =
-        SubarraySum(nums, k);
+    int ketQua = SubarraySum(nums, k);
 
-    Console.WriteLine(
-        "Số mảng con có tổng bằng "
-        + k
-        + " = "
-        + ketQua
-    );
+    Console.WriteLine("Số mảng con có tổng bằng " + k + " : " + ketQua);
 }
 
 
